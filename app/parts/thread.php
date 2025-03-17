@@ -1,6 +1,3 @@
-
-
-
 <!-- スレッドエリア -->
     <div class="threadWrapper">
         <div class="childWrapper">

@@ -1,9 +1,7 @@
 <?php
 
 include_once("./app/database/connect.php");
-
 include("./app/functions/comment_add.php");
-
 include("./app/functions/comment_get.php");
 
 ?>
@@ -18,12 +16,13 @@ include("./app/functions/comment_get.php");
 </head>
 <body>
 
-<?php include("app/parts/header.php"); ?>
+<?php include("./app/parts/header.php"); ?>
 
 <!--バリデーションエラーのチェック吐き出し-->
-<?php include("app/parts/validation.php"); ?>
+<?php include("./app/parts/validation.php"); ?>
 
     <!-- スレッドエリア -->
-     <?php include("app/parts/thread.php"); ?>
+     <?php include("./app/parts/thread.php"); ?>
+     <?php include("./app/parts/newthreadbuttan.php"); ?>
 </body>
 </html>
