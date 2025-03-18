@@ -8,6 +8,7 @@ error_reporting(E_ALL);
 include_once("/Applications/XAMPP/xamppfiles/htdocs/2ch-bbs/app/database/connect.php");
 include("/Applications/XAMPP/xamppfiles/htdocs/2ch-bbs/app/functions/comment_add.php");
 include("/Applications/XAMPP/xamppfiles/htdocs/2ch-bbs/app/functions/comment_get.php");
+include(__DIR__ . '../../functions/thread_add.php');
 ?>
 
 
