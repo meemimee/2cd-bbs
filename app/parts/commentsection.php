@@ -1,6 +1,12 @@
+<?php
+include(__DIR__ . '/../functions/comment_get.php');
+?>
+
 <section>
                 <?php foreach($comment_array as $comment) :?>
-                <article>
+                <!--スレッドのIDとコメントのthread_idが一致するときに-->
+                <?php if($thread["id"] == $comment["thread_id"]) : ?>
+                    <article>
                     <div class="wrapper">
                         <div class="nameArea">
                             <span>名前：</span>
@@ -10,5 +16,6 @@
                         <p class="comment"><?php echo $comment["body"] ?></p>
                     </div>
                 </article>
+                <?php endif; ?>
                 <?php endforeach ?>
 </section>

@@ -12,6 +12,7 @@ $statement = $pdo->prepare($sql);
 $statement->execute();
 $thread_array = $statement;
 
+
 ?>
 
 
